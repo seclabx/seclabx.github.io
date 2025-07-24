@@ -9,12 +9,12 @@
     body {
       font-family: 'Segoe UI', sans-serif;
       margin: 0;
-      background: #f4f4f4;
-      color: #333;
+      background: #f9f9f9;
+      color: #111;
     }
     header {
-      background-color: #111;
-      color: #fff;
+      background-color: #ffffff;
+      color: #111;
       padding: 2rem 1rem;
       text-align: center;
     }
@@ -24,25 +24,28 @@
     }
     header p {
       font-size: 1.1rem;
-      color: #ccc;
+      color: #555;
     }
     main {
       max-width: 900px;
       margin: 2rem auto;
       padding: 1rem;
-      background: #fff;
+      background: #fff; /* changed to white */
       border-radius: 8px;
-      box-shadow: 0 0 12px rgba(0, 0, 0, 0.05);
+      box-shadow: 0 0 8px rgba(0, 0, 0, 0.03);
     }
     section {
       margin-bottom: 2rem;
     }
     h2 {
       font-size: 1.4rem;
-      color: #111;
-      border-left: 4px solid #555;
+      color: #28a745;
+      border-left: 4px solid #cce5cc;
       padding-left: 10px;
       margin-bottom: 1rem;
+    }
+    h3 {
+      color: #28a745; /* make h3 green */
     }
     ul {
       padding-left: 20px;
@@ -51,13 +54,27 @@
       margin-bottom: 0.5rem;
     }
     .icon {
-      color: #333;
+      color: #444;
       margin-right: 0.5rem;
     }
     .contact p, .footer {
       font-size: 0.95rem;
-      color: #666;
+      color: #555;
     }
+    .contact a {
+      /*color: #28a745;*/ /* make email & website links green */
+    }
+	/* Default green links (for email and website) */
+	.green-link {
+	  color: #28a745;
+	  text-decoration: none;
+	}
+
+	/* White links (for buttons or dark backgrounds) */
+	.white-link {
+	  color: white;
+	  text-decoration: none;
+	}
     .footer {
       text-align: center;
       padding: 1rem;
@@ -66,21 +83,25 @@
       display: inline-block;
       margin-top: 1rem;
       padding: 0.5rem 1rem;
-      background: #222;
+      background: #28a745;
       color: #fff;
       text-decoration: none;
       border-radius: 4px;
     }
     .btn:hover {
-      background: #444;
+      background: #218838;
     }
   </style>
 </head>
 <body>
-  <header>
-    <h1>SecLabX</h1>
-    <p>Your partner in Embedded Systems, IoT, Security, and Blockchain</p>
-  </header>
+	<header style="text-align: center; padding: 30px 20px; background-color: #ffffff;">
+	  <h1 style="margin: 0; font-size: 36px; font-family: 'Segoe UI', sans-serif;">
+		<span style="color: #000;">SEC</span><span style="color: #28a745;">LABX</span>
+	  </h1>
+	  <p style="margin: 5px 0 0; font-size: 16px; font-family: Arial, sans-serif; color: #555;">
+		Your partner in Embedded Systems, IoT, Security, and Blockchain
+	  </p>
+	</header>
 
   <main>
     <section>
@@ -143,8 +164,8 @@
 
     <section class="contact">
       <h2><i class="fas fa-envelope icon"></i>Contact</h2>
-      <p>Email: <a href="mailto:seclabx.team@gmail.com">seclabx.team@gmail.com</a></p>
-      <p>Website:  <a href="https://seclabx.github.io/" target="_blank">seclabx.github.io</a>
+	  <p>Email: <a href="mailto:seclabx.team@gmail.com" class="green-link">seclabx.team@gmail.com</a></p>
+	  <p>Website: <a href="https://seclabx.github.io/" class="green-link" target="_blank">seclabx.github.io</a></p>
       <p>Location: Remote-first, operating globally</p>
       <a href="portfolio.pdf" class="btn" download>Download 1-Page PDF</a>
     </section>
