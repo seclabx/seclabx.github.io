@@ -1,34 +1,18 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: 'export', // Keep static export
-  trailingSlash: true, // Keep for consistent URLs
+  output: 'export',
+  trailingSlash: true,
   images: {
-    unoptimized: true, // Keep for static export
+    unoptimized: true,
   },
   eslint: {
-    ignoreDuringBuilds: true, // Keep to avoid build failures
+    ignoreDuringBuilds: true,
   },
   typescript: {
-    ignoreBuildErrors: true, // Keep to avoid build failures
+    ignoreBuildErrors: true,
   },
   experimental: {
     optimizeCss: true,
-  },
-  webpack: (config, { dev, isServer }) => {
-    if (!dev && !isServer) {
-      config.optimization.splitChunks = {
-        chunks: 'all',
-        cacheGroups: {
-          styles: {
-            name: 'styles',
-            test: /\.(css|scss|sass)$/,
-            chunks: 'all',
-            enforce: true,
-          },
-        },
-      };
-    }
-    return config;
   },
 }
 
