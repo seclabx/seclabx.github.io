@@ -55,11 +55,23 @@
   }
   body {
     @apply bg-background text-foreground;
+    /* Force background color for static export */
+    background-color: white;
+    color: #0f172a;
   }
 }
 
 html {
   scroll-behavior: smooth;
+}
+
+/* Add explicit styles to ensure they work in static export */
+.text-green-500 {
+  color: #22c55e !important;
+}
+
+.bg-gray-100 {
+  background-color: #f3f4f6 !important;
 }
 
 /* Custom animations */

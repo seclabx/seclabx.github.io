@@ -2,7 +2,6 @@
 const nextConfig = {
   output: 'export', // This is the key setting for static export
   trailingSlash: true, // Recommended for static exports to ensure consistent URLs
-  // Remove basePath and assetPrefix to use relative paths
   images: {
     unoptimized: true, // Required for static export if you use next/image
   },
@@ -15,6 +14,16 @@ const nextConfig = {
   experimental: {
     optimizePackageImports: ['lucide-react'],
   },
+  webpack: (config, { isServer }) => {
+    if (!isServer) {
+      config.resolve.fallback = {
+        ...config.resolve.fallback,
+        fs: false,
+      };
+    }
+    return config;
+  },
+  distDir: '.next',
 }
 
 export default nextConfig
