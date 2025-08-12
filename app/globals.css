@@ -2,26 +2,27 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Added more comprehensive fallback styles at the top */
-/* Fallback styles that will work even if Tailwind fails to load */
+/* Enhanced fallback styles to ensure styling works even if Tailwind processing fails */
+/* Critical styles that must always work */
 * {
-  box-sizing: border-box;
+  box-sizing: border-box !important;
 }
 
 html,
 body {
-  margin: 0;
-  padding: 0;
+  margin: 0 !important;
+  padding: 0 !important;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif !important;
-  line-height: 1.6;
+  line-height: 1.6 !important;
   color: #1f2937 !important;
   background-color: #ffffff !important;
 }
 
-/* SECLABX branding - ensure this always works */
+/* SECLABX branding - critical styles */
 .seclabx-brand {
   font-weight: bold !important;
   font-size: 1.5rem !important;
+  display: inline !important;
 }
 
 .seclabx-brand .sec-part {
@@ -32,11 +33,11 @@ body {
   color: #22c55e !important;
 }
 
-/* Basic layout styles */
+/* Essential layout styles */
 .container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 1rem;
+  max-width: 1200px !important;
+  margin: 0 auto !important;
+  padding: 0 1rem !important;
 }
 
 .flex {
@@ -95,7 +96,7 @@ body {
   margin-top: 2rem !important;
 }
 
-/* Green color scheme */
+/* Green color scheme - critical for branding */
 .text-green-500,
 .text-green-600 {
   color: #22c55e !important;
@@ -135,12 +136,12 @@ body {
 /* Button styles */
 button,
 .btn {
-  padding: 0.5rem 1rem;
-  border-radius: 0.375rem;
-  border: none;
-  cursor: pointer;
-  font-weight: 500;
-  transition: all 0.2s;
+  padding: 0.5rem 1rem !important;
+  border-radius: 0.375rem !important;
+  border: none !important;
+  cursor: pointer !important;
+  font-weight: 500 !important;
+  transition: all 0.2s !important;
 }
 
 .btn-primary {
@@ -155,11 +156,11 @@ button,
 /* Form styles */
 input,
 textarea {
-  width: 100%;
-  padding: 0.5rem;
-  border: 1px solid #d1d5db;
-  border-radius: 0.375rem;
-  font-size: 1rem;
+  width: 100% !important;
+  padding: 0.5rem !important;
+  border: 1px solid #d1d5db !important;
+  border-radius: 0.375rem !important;
+  font-size: 1rem !important;
 }
 
 /* Grid styles */
