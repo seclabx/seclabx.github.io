@@ -22,21 +22,46 @@ const nextConfig = {
       };
     }
     
-    // Ensure CSS is properly processed
+    // Force CSS to be processed and included
     config.optimization = {
       ...config.optimization,
       splitChunks: {
         chunks: 'all',
+        minSize: 0,
         cacheGroups: {
+          default: false,
+          vendors: false,
           styles: {
             name: 'styles',
-            test: /\.(css|scss)$/,
+            type: 'css/mini-extract',
             chunks: 'all',
             enforce: true,
+            priority: 20,
           },
         },
       },
     };
+    
+    // Ensure CSS modules are processed
+    const rules = config.module.rules
+      .find((rule) => typeof rule.oneOf === 'object')
+      ?.oneOf?.filter((rule) => Array.isArray(rule.use));
+
+    if (rules) {
+      rules.forEach((rule) => {
+        if (rule.use.some((use) => use.loader?.includes('css-loader'))) {
+          rule.use.forEach((use) => {
+            if (use.loader?.includes('css-loader')) {
+              use.options = {
+                ...use.options,
+                importLoaders: 1,
+                modules: false,
+              };
+            }
+          });
+        }
+      });
+    }
     
     return config;
   },
