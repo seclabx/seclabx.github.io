@@ -21,9 +21,29 @@ const nextConfig = {
         fs: false,
       };
     }
+    
+    // Ensure CSS is properly processed
+    config.optimization = {
+      ...config.optimization,
+      splitChunks: {
+        chunks: 'all',
+        cacheGroups: {
+          styles: {
+            name: 'styles',
+            test: /\.(css|scss)$/,
+            chunks: 'all',
+            enforce: true,
+          },
+        },
+      },
+    };
+    
     return config;
   },
   distDir: '.next',
+  compiler: {
+    removeConsole: false,
+  },
 }
 
 export default nextConfig
