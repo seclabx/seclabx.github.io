@@ -19,7 +19,7 @@ export function Hero() {
             <Button
               size="lg"
               className="bg-green-600 hover:bg-green-700 text-white px-8 py-4 text-lg font-medium"
-              onClick={() => (window.location.href = "mailto:seclabx.team@gmail.com?subject=Consultation Inquiry")}
+              onClick={() => (window.location.href = "mailto:info@expertino.io?subject=Consultation Inquiry")}
             >
               <Mail className="mr-2 h-5 w-5" />
               Speak to an Expert

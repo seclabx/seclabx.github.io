@@ -1,7 +1,7 @@
 import { Header } from "@/components/header"
 import { Hero } from "@/components/hero"
 import { WhatWeDo } from "@/components/what-we-do"
-import { WhySecLabX } from "@/components/why-seclabx"
+import { WhyXpertino } from "@/components/why-xpertino"
 import { ExpertiseSnapshot } from "@/components/expertise-snapshot"
 import { EngagementModel } from "@/components/engagement-model"
 import { Contact } from "@/components/contact"
@@ -14,7 +14,7 @@ export default function HomePage() {
       <main>
         <Hero />
         <WhatWeDo />
-        <WhySecLabX />
+        <WhyXpertino />
         <ExpertiseSnapshot />
         <EngagementModel />
         <Contact />

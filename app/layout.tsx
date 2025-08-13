@@ -10,24 +10,24 @@ const inter = Inter({
 })
 
 export const metadata: Metadata = {
-  title: "SECLABX - Precision Engineering for Secure & Scalable Systems",
+  title: "XPERTINO - Precision Engineering for Secure & Scalable Systems",
   description: "Cairo-based consulting firm delivering expert solutions in Embedded Systems, Security, and Blockchain.",
-  metadataBase: new URL("https://seclabx.github.io"),
+  metadataBase: new URL("https://expertino.io"),
   openGraph: {
-    title: "SECLABX - Precision Engineering for Secure & Scalable Systems",
+    title: "XPERTINO - Precision Engineering for Secure & Scalable Systems",
     description:
       "Cairo-based consulting firm delivering expert solutions in Embedded Systems, Security, and Blockchain.",
-    url: "https://seclabx.github.io",
-    siteName: "SECLABX",
+    url: "https://expertino.io",
+    siteName: "XPERTINO",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "SECLABX - Precision Engineering for Secure & Scalable Systems",
+    title: "XPERTINO - Precision Engineering for Secure & Scalable Systems",
     description:
       "Cairo-based consulting firm delivering expert solutions in Embedded Systems, Security, and Blockchain.",
   },
-    generator: 'v0.dev'
+    generator: 'v0.app'
 }
 
 export default function RootLayout({

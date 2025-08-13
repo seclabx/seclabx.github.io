@@ -42,8 +42,8 @@ export function Header() {
         <div className="flex items-center justify-between h-16">
           <div className="flex-shrink-0">
             <h1 className="text-2xl font-bold tracking-tight">
-              <span className="text-black dark:text-white">SEC</span>
-              <span className="text-green-600 dark:text-green-400">LABX</span>
+              <span className="text-green-600 dark:text-green-400">X</span>
+              <span className="text-black dark:text-white">PERTINO</span>
             </h1>
           </div>
 
@@ -55,10 +55,10 @@ export function Header() {
               What We Do
             </button>
             <button
-              onClick={() => scrollToSection("why-seclabx")}
+              onClick={() => scrollToSection("why-xpertino")}
               className="text-sm font-medium hover:text-green-600 dark:hover:text-green-400 transition-colors"
             >
-              Why SECLABX
+              Why XPERTINO
             </button>
             <button
               onClick={() => scrollToSection("expertise")}
@@ -112,10 +112,10 @@ export function Header() {
                 What We Do
               </button>
               <button
-                onClick={() => scrollToSection("why-seclabx")}
+                onClick={() => scrollToSection("why-xpertino")}
                 className="block px-3 py-2 text-sm font-medium hover:text-green-600 dark:hover:text-green-400 transition-colors"
               >
-                Why SECLABX
+                Why XPERTINO
               </button>
               <button
                 onClick={() => scrollToSection("expertise")}

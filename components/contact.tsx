@@ -28,7 +28,7 @@ Company: ${formData.company}
 Message:
 ${formData.message}`
 
-    window.location.href = `mailto:seclabx.team@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`
+    window.location.href = `mailto:info@expertino.io?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`
   }
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
@@ -121,11 +121,8 @@ ${formData.message}`
                   <Mail className="h-6 w-6 text-green-600 dark:text-green-400 mr-4" />
                   <div>
                     <div className="font-medium">Email</div>
-                    <a
-                      href="mailto:seclabx.team@gmail.com"
-                      className="text-green-600 dark:text-green-400 hover:underline"
-                    >
-                      seclabx.team@gmail.com
+                    <a href="mailto:info@expertino.io" className="text-green-600 dark:text-green-400 hover:underline">
+                      info@expertino.io
                     </a>
                   </div>
                 </div>
@@ -140,8 +137,8 @@ ${formData.message}`
                   <Globe className="h-6 w-6 text-green-600 dark:text-green-400 mr-4" />
                   <div>
                     <div className="font-medium">Website</div>
-                    <a href="https://seclabx.github.io" className="text-green-600 dark:text-green-400 hover:underline">
-                      https://seclabx.github.io
+                    <a href="https://expertino.io" className="text-green-600 dark:text-green-400 hover:underline">
+                      https://expertino.io
                     </a>
                   </div>
                 </div>
@@ -157,7 +154,7 @@ ${formData.message}`
               <Button
                 variant="secondary"
                 className="bg-white text-green-600 hover:bg-gray-100"
-                onClick={() => (window.location.href = "mailto:seclabx.team@gmail.com?subject=Project Discussion")}
+                onClick={() => (window.location.href = "mailto:info@expertino.io?subject=Project Discussion")}
               >
                 Schedule a Call
               </Button>
