@@ -54,6 +54,48 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" suppressHydrationWarning>
+      <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Organization",
+              name: "XPERTINO",
+              url: "https://expertino.io",
+              logo: "https://expertino.io/images/xpertino-logo.png",
+              description:
+                "Cairo-based consulting firm delivering expert solutions in Embedded Systems, Security, and Blockchain.",
+              email: "info@expertino.io",
+              address: {
+                "@type": "PostalAddress",
+                addressLocality: "Cairo",
+                addressCountry: "Egypt",
+              },
+              areaServed: "Worldwide",
+              foundingLocation: {
+                "@type": "Place",
+                name: "Cairo, Egypt",
+              },
+              knowsAbout: [
+                "Embedded Systems",
+                "Blockchain Technology",
+                "Cryptocurrency",
+                "Security Engineering",
+                "System Architecture",
+                "Technical Advisory",
+              ],
+              serviceType: [
+                "Embedded Systems Development",
+                "Blockchain & Crypto Solutions",
+                "Security Engineering",
+                "Architecture Reviews",
+                "Technical Advisory",
+              ],
+            }),
+          }}
+        />
+      </head>
       <body className={inter.className}>
         <ThemeProvider attribute="class" defaultTheme="light" enableSystem disableTransitionOnChange>
           {children}
