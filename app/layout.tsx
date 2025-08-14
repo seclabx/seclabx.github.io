@@ -13,6 +13,14 @@ export const metadata: Metadata = {
   title: "XPERTINO - Precision Engineering for Secure & Scalable Systems",
   description: "Cairo-based consulting firm delivering expert solutions in Embedded Systems, Security, and Blockchain.",
   metadataBase: new URL("https://expertino.io"),
+  icons: {
+    icon: [
+      { url: "/favicon.ico" },
+      { url: "/favicon-16x16.png", sizes: "16x16", type: "image/png" },
+      { url: "/favicon-32x32.png", sizes: "32x32", type: "image/png" },
+    ],
+    apple: [{ url: "/apple-touch-icon.png", sizes: "180x180", type: "image/png" }],
+  },
   openGraph: {
     title: "XPERTINO - Precision Engineering for Secure & Scalable Systems",
     description:
@@ -20,12 +28,21 @@ export const metadata: Metadata = {
     url: "https://expertino.io",
     siteName: "XPERTINO",
     type: "website",
+    images: [
+      {
+        url: "/images/xpertino-logo.png",
+        width: 1200,
+        height: 630,
+        alt: "XPERTINO Logo",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
     title: "XPERTINO - Precision Engineering for Secure & Scalable Systems",
     description:
       "Cairo-based consulting firm delivering expert solutions in Embedded Systems, Security, and Blockchain.",
+    images: ["/images/xpertino-logo.png"],
   },
     generator: 'v0.app'
 }
