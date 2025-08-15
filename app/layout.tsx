@@ -12,7 +12,7 @@ const inter = Inter({
 export const metadata: Metadata = {
   title: "XPERTINO - Precision Engineering for Secure & Scalable Systems",
   description: "Cairo-based consulting firm delivering expert solutions in Embedded Systems, Security, and Blockchain.",
-  metadataBase: new URL("https://expertino.io"),
+  metadataBase: new URL("https://xpertino.io"),
   icons: {
     icon: [
       { url: "/favicon.ico" },
@@ -25,7 +25,7 @@ export const metadata: Metadata = {
     title: "XPERTINO - Precision Engineering for Secure & Scalable Systems",
     description:
       "Cairo-based consulting firm delivering expert solutions in Embedded Systems, Security, and Blockchain.",
-    url: "https://expertino.io",
+    url: "https://xpertino.io",
     siteName: "XPERTINO",
     type: "website",
     images: [
@@ -62,8 +62,8 @@ export default function RootLayout({
               "@context": "https://schema.org",
               "@type": "Organization",
               name: "XPERTINO",
-              url: "https://expertino.io",
-              logo: "https://expertino.io/images/xpertino-logo.png",
+              url: "https://xpertino.io",
+              logo: "https://xpertino.io/images/xpertino-logo.png",
               description:
                 "Cairo-based consulting firm delivering expert solutions in Embedded Systems, Security, and Blockchain.",
               email: "info@expertino.io",
