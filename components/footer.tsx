@@ -6,7 +6,7 @@ export function Footer() {
           <div>
             <h3 className="text-2xl font-bold mb-4">
               <span className="text-green-600 dark:text-green-400">X</span>
-              <span className="text-black dark:text-white">PERTINO</span>
+              <span className="text-black dark:text-white">pertino</span>
             </h3>
             <p className="text-gray-600 dark:text-gray-400 leading-relaxed">
               Precision engineering for secure and scalable systems. Trusted by global clients for critical software
@@ -33,7 +33,7 @@ export function Footer() {
           </div>
         </div>
         <div className="border-t border-gray-300 dark:border-gray-700 mt-12 pt-8 text-center text-gray-600 dark:text-gray-400">
-          <p>&copy; 2024 XPERTINO. All rights reserved.</p>
+          <p>&copy; 2024 Xpertino. All rights reserved.</p>
         </div>
       </div>
     </footer>

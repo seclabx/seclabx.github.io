@@ -43,7 +43,7 @@ export function Header() {
           <div className="flex-shrink-0">
             <h1 className="text-2xl font-bold tracking-tight">
               <span className="text-green-600 dark:text-green-400">X</span>
-              <span className="text-black dark:text-white">PERTINO</span>
+              <span className="text-black dark:text-white">pertino</span>
             </h1>
           </div>
 
@@ -58,7 +58,7 @@ export function Header() {
               onClick={() => scrollToSection("why-xpertino")}
               className="text-sm font-medium hover:text-green-600 dark:hover:text-green-400 transition-colors"
             >
-              Why XPERTINO
+              Why Xpertino
             </button>
             <button
               onClick={() => scrollToSection("expertise")}
@@ -115,7 +115,7 @@ export function Header() {
                 onClick={() => scrollToSection("why-xpertino")}
                 className="block px-3 py-2 text-sm font-medium hover:text-green-600 dark:hover:text-green-400 transition-colors"
               >
-                Why XPERTINO
+                Why Xpertino
               </button>
               <button
                 onClick={() => scrollToSection("expertise")}

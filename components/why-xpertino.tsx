@@ -16,7 +16,7 @@ export function WhyXpertino() {
           <div>
             <h2 className="text-4xl md:text-5xl font-bold mb-8">
               Why <span className="text-green-600 dark:text-green-400">X</span>
-              <span className="text-black dark:text-white">PERTINO</span>
+              <span className="text-black dark:text-white">pertino</span>
             </h2>
             <p className="text-xl text-gray-600 dark:text-gray-400 mb-8 leading-relaxed">
               We combine deep technical expertise with a security-first mindset, delivering solutions that meet the
